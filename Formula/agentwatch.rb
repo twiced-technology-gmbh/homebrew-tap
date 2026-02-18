@@ -5,21 +5,21 @@
 class Agentwatch < Formula
   desc "Terminal UI for watching AI agents work"
   homepage "https://github.com/twiced-technology-gmbh/agentwatch"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twiced-technology-gmbh/agentwatch/releases/download/v0.2.0/agentwatch_0.2.0_darwin_amd64.tar.gz"
-      sha256 "a8d6728b3b6fb81756c58ae6f712abc2360d57bff41c85a37effcaa4a5d14d17"
+      url "https://github.com/twiced-technology-gmbh/agentwatch/releases/download/v0.3.0/agentwatch_0.3.0_darwin_amd64.tar.gz"
+      sha256 "19263cadb3cb47195470b1ca7a711148b8765e9bd42f04c62a8cbb856e658f4b"
 
       def install
         bin.install "agentwatch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twiced-technology-gmbh/agentwatch/releases/download/v0.2.0/agentwatch_0.2.0_darwin_arm64.tar.gz"
-      sha256 "70638ac704b639b1627d5eae0ed2d2fac297dc7d74f597f3fbda3f8536235bf8"
+      url "https://github.com/twiced-technology-gmbh/agentwatch/releases/download/v0.3.0/agentwatch_0.3.0_darwin_arm64.tar.gz"
+      sha256 "122269f9dbd8c39e4fbb500e0e7702c098aa796eabdc2b47c32bc9f82ce93a95"
 
       def install
         bin.install "agentwatch"
@@ -29,15 +29,15 @@ class Agentwatch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twiced-technology-gmbh/agentwatch/releases/download/v0.2.0/agentwatch_0.2.0_linux_amd64.tar.gz"
-      sha256 "e9a395d7ce0de5dfe5616be56db4463738f302e3de6b776216c020a01a19466b"
+      url "https://github.com/twiced-technology-gmbh/agentwatch/releases/download/v0.3.0/agentwatch_0.3.0_linux_amd64.tar.gz"
+      sha256 "fee892048dd256bceab63ab137f22aebdc63376ecad1dba953ec1a989990674a"
       def install
         bin.install "agentwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twiced-technology-gmbh/agentwatch/releases/download/v0.2.0/agentwatch_0.2.0_linux_arm64.tar.gz"
-      sha256 "67fea187aaef86172bd56db332e0030b97738aa5dde8bff419b3dffedcd90009"
+      url "https://github.com/twiced-technology-gmbh/agentwatch/releases/download/v0.3.0/agentwatch_0.3.0_linux_arm64.tar.gz"
+      sha256 "86710a87970db6d4a4c638b2b0d7b03f1aae47a706ebcd2c06914a35a6916f15"
       def install
         bin.install "agentwatch"
       end
